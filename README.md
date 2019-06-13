@@ -9,7 +9,7 @@ To know more about Genesys PureConnect platform ref. https://www.genesys.com/pla
 For ICWS API guide ref. https://help.genesys.com/developer/cic/docs/icws/webhelp/ConceptualContent/Welcome.htm#top
 
 #Note
-I havent uploaded the following files for security reasons.
-cticonnector.oberoirealty.com.pfx
-server.cert
-server.key
+I havent uploaded the following files for security reasons
+* cticonnector.oberoirealty.com.pfx<br/>
+* server.cert<br/>
+* server.key<br/>
