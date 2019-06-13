@@ -1,0 +1,15 @@
+.DS_Store
+node_modules
+desktop.ini
+server.cert
+server.key
+cticonnector.oberoirealty.com.pfx
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
