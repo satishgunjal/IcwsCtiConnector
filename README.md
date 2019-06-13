@@ -7,3 +7,9 @@ ICWS provides a rich API that applications can use to manage sessions with the I
 
 To know more about Genesys PureConnect platform ref. https://www.genesys.com/platform/pureconnect 
 For ICWS API guide ref. https://help.genesys.com/developer/cic/docs/icws/webhelp/ConceptualContent/Welcome.htm#top
+
+#Note
+I havent uploaded the following files for security reasons.
+cticonnector.oberoirealty.com.pfx
+server.cert
+server.key
