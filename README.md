@@ -5,10 +5,10 @@
 
 ICWS provides a rich API that applications can use to manage sessions with the Interaction Center (IC) server. ICWS provides session creation and logon functions that allow applications to connect with one or more IC servers using various logon options (e.g. user, password, station, remote number, remote station, persistent, audio enabled).  
 
-To know more about Genesys PureConnect platform ref. https://www.genesys.com/platform/pureconnect 
+To know more about Genesys PureConnect platform ref. https://www.genesys.com/platform/pureconnect<br/>
 For ICWS API guide ref. https://help.genesys.com/developer/cic/docs/icws/webhelp/ConceptualContent/Welcome.htm#top
 
-#Note
+#Note<br/>
 I havent uploaded the following files for security reasons
 * cticonnector.oberoirealty.com.pfx<br/>
 * server.cert<br/>
