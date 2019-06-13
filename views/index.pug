@@ -1,0 +1,49 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title Socket.io
+  body
+    h1 Communicating with socket.io!
+    input#userId(type='text', placeholder='userId')
+    input#subscriptionId(type='text', placeholder='subscriptionId')
+    p
+      input#login(type='button', value='Login')
+    p
+      input#logout(type='button', value='Logout')
+    input#cli(type='number', placeholder='Enter CLI')
+    p
+      input#callRing(type='button', value='Simulate Call Ring')
+    p
+      input#callDrop(type='button', value='Simulate Call Drop')
+    script(src='https://code.jquery.com/jquery-1.10.1.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js')
+    script.
+      $(document).ready(function(){
+      console.log("JQUERY Loaded");
+      })
+      var socket = io.connect('http://localhost:8080');
+      // A dialog box is displayed when the server sends us a "message"
+      socket.on('urn:inin.com:status:userStatusMessage', function(message) {
+      alert('userStatusMessage>> : ' + JSON.stringify(message));
+      })
+      socket.on('urn:inin.com:queues:queueContentsMessage', function(message) {
+      alert('queueContentsMessage>> : ' + JSON.stringify(message));
+      })
+      // When the button is clicked, a "message" is sent to the server
+      $('#callRing').click(function () {
+      console.log("ring button pressed")
+      socket.emit('SIMCALLRING', {userId: $("#userId").val(),subscriptionId: $("#subscriptionId").val()});
+      })
+      $('#callDrop').click(function () {
+      console.log("drop button pressed")
+      socket.emit('SIMCALLDROP', {cli: $("#cli").val()});
+      })
+      $('#login').click(function () {
+      console.log("login button pressed")
+      socket.emit('LOGIN', {userId: $("#userId").val(),subscriptionId: $("#subscriptionId").val()});
+      })
+      $('#logout').click(function () {
+      console.log("logout button pressed")
+      socket.emit('LOGOUT', {userId: $("#userId").val(),subscriptionId: $("#subscriptionId").val()});
+      })

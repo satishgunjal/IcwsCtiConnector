@@ -1,0 +1,39 @@
+{
+  "name": "lodha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "start-dev": "source dev.env; nodemon server.js",
+    "start-prod": "source prod.env; node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "app-root-path": "^2.1.0",
+    "body-parser": "^1.19.0",
+    "circular-json": "^0.5.5",
+    "cors": "^2.8.5",
+    "eventsource": "^1.0.7",
+    "express": "^4.17.0",
+    "jquery": "^3.3.1",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.21",
+    "mongoose": "^5.5.10",
+    "morgan": "^1.9.0",
+    "mssql": "^4.1.0",
+    "path": "^0.12.7",
+    "ping": "^0.2.2",
+    "promise": "^8.0.3",
+    "pug": "^2.0.3",
+    "querystring": "^0.2.0",
+    "request": "^2.88.0",
+    "socket.io": "^2.2.0",
+    "winston": "^3.0.0",
+    "winston-daily-rotate-file": "^3.3.2",
+    "winston-mongodb": "^5.0.0",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
