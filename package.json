@@ -21,7 +21,7 @@
     "jquery": ">=3.4.0",
     "moment": "^2.24.0",
     "moment-timezone": "^0.5.21",
-    "mongoose": "^5.5.10",
+    "mongoose": "^5.7.5",
     "morgan": ">=1.9.1",
     "mssql": "^4.1.0",
     "path": "^0.12.7",
