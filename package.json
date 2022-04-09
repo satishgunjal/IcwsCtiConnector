@@ -19,7 +19,7 @@
     "eventsource": "^1.0.7",
     "express": "^4.17.0",
     "jquery": ">=3.4.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "moment-timezone": "^0.5.21",
     "mongoose": "^5.5.10",
     "morgan": ">=1.9.1",
